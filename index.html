@@ -2,13 +2,15 @@
 <html lang="en">
   <head>
       <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Adam Oberhausen Portfolio</title>
       <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
       <link rel="stylesheet" href="css/bootstrap.css">
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container-fluid no-padding">
@@ -16,12 +18,12 @@
         <div class="row no-margins header-and-footer-background">
           <div class="col-xs-4 text-left text-uppercase">
             <h1>Contact Info</h1>
-            <h4>Email: aoberhau@gmail.com</h4>
+            <h4>Email: <a href="mailto:aoberhau@gmail.com">aoberhau@gmail.com</a></h4>
             <h4>Phone: 734.644.9099</h4>
             <h4></h4>
           </div>
           <div class="col-xs-4 text-center">
-            <img id="logo" src="images/logo/logo.svg" alt="adam oberhausen logo">
+            <h1><img id="logo" src="images_src/logo/logo.svg" alt="adam oberhausen logo"></h1>
           </div>
           <div class="col-xs-4 text-right text-uppercase">
             <h1>Adam Oberhausen</h1>
@@ -30,68 +32,84 @@
             <h4>Experienced Manager</h4>
           </div>
         </div>
-        <hr id="makeitpop">
       </header>
-
       <section>
         <section>
           <div class="row no-margins">
+            <hr class="makeitpop">
             <h2 class="text-center">Experience</h2>
+            <hr class="makeitpop">
             <div class="col-md-4 text-center">
               <picture>
-                <img class="img-fluid img-circle" src="images/software_development_square-600_medium.jpeg" sizes alt="image of a keyboard with green led backlighting">
+                <source media="(max-width: 1024px)" srcset="images/software_development_square-300_small.jpeg">
+                <img class="img-fluid img-circle" src="images/software_development_square-600_medium.jpeg" data-toggle='modal' data-target="#softwaredev" alt="image of a keyboard with green led backlighting">
               </picture>
-              <h3 class="text-uppercase">Software Developer</h3>
-              <p>https://github.com</p>
+              <a class="blacktext" data-toggle='modal' data-target="#softwaredev">
+                <h3 class="text-uppercase">Software Developer</h3>
+              </a>
             </div>
             <div class="col-md-4 text-center">
               <picture>
-                <img class="img-fluid image-rounded-custom" src="images/dev_ops_square-600_medium.jpeg" alt="image of disney's wall e robot">
+                <source media="(max-width: 1024px)" srcset="images/dev_ops_square-300_small.jpeg">
+                <img class="img-fluid image-rounded-custom" src="images/dev_ops_square-600_medium.jpeg" data-toggle='modal' data-target="#devops" alt="image of disney's wall e robot">
               </picture>
-              <h3 class="text-uppercase">DevOps Engineer</h3>
-              <p>https://github.com</p>
+              <a class="blacktext" data-toggle='modal' data-target="#devops">
+                <h3 class="text-uppercase">DevOps Engineer</h3>
+              </a>
             </div>
             <div class="col-md-4 text-center">
               <picture>
-                <img class="img-fluid img-circle" src="images/management_square-600_medium.jpg" alt="a whiteboard with several post-it notes and management terminology">
+                <source media="(max-width: 1024px)" srcset="images/management_square-300_small.jpg">
+                <img class="img-fluid img-circle" src="images/management_square-600_medium.jpg" data-toggle='modal' data-target="#management" alt="a whiteboard with several post-it notes and management terminology">
               </picture>
-              <h3 class="text-uppercase">Management</h3>
-              <p>https://github.com</p>
+              <a class="blacktext" data-toggle='modal' data-target="#management">
+                <h3 class="text-uppercase">Management</h3>
+              </a>
             </div>
           </div>
         </section>
         <section>
           <div class="row no-margins">
+            <hr class="makeitpop">
             <h2 class="text-center">Featured Work</h2>
+            <hr class="makeitpop">
             <div class="col-md-4 text-center">
               <picture>
-                <img class="img-fluid image-rounded-custom" src="images/code_editor_square-600_medium.jpeg" sizes alt="computer screen with html code">
+                <source media="(max-width: 1024px)" srcset="images/code_editor_square-300_small.jpeg">
+                <img class="img-fluid image-rounded-custom" src="images/code_editor_square-600_medium.jpeg" data-toggle='modal' data-target="#project1" alt="computer screen with html code">
               </picture>
-              <h3 class="text-uppercase">Front-End Ninja</h3>
-              <p>https://github.com</p>
+              <a class="blacktext" data-toggle='modal' data-target="#project1">
+                <h3 class="text-uppercase">Front-End Ninja</h3>
+              </a>
+              <a href="https://github.com"><p>https://github.com</p></a>
             </div>
             <div class="col-md-4 text-center">
               <picture>
-                <img class="img-fluid img-circle" src="images/under_construction_square-600_medium.jpeg" alt="computer keyboard with an under construction warning">
+                <source media="(max-width: 1024px)" srcset="images/under_construction_square-300_small.jpeg">
+                <img class="img-fluid img-circle" src="images/under_construction_square-600_medium.jpeg" data-toggle='modal' data-target="#project2" alt="computer keyboard with an under construction warning">
               </picture>
-              <h3 class="text-uppercase">JavaScript Guru</h3>
-              <p>https://github.com</p>
+              <a class="blacktext" data-toggle='modal' data-target="#project2">
+                <h3 class="text-uppercase">JavaScript Guru</h3>
+              </a>
+              <a href="https://github.com"><p>https://github.com</p></a>
             </div>
             <div class="col-md-4 text-center">
               <picture>
-                <img class="img-fluid image-rounded-custom" src="images/potato_murder_square-600_medium.jpeg" alt="a potato looking shocked as it discovers french fries in it's path">
+                <source media="(max-width: 1024px)" srcset="images/potato_murder_square-300_small.jpeg">
+                <img class="img-fluid image-rounded-custom" src="images/potato_murder_square-600_medium.jpeg" data-toggle='modal' data-target="#project3" alt="a potato looking shocked as it discovers french fries in it's path">
               </picture>
-              <h3 class="text-uppercase">Game Developer</h3>
-              <p>https://github.com</p>
+              <a class="blacktext" data-toggle='modal' data-target="#project3">
+                <h3 class="text-uppercase">Game Developer</h3>
+              </a>
+              <a href="https://github.com"><p>https://github.com</p></a>
             </div>
           </div>
         </section>
       </section>
-
       <footer>
         <div class="row no-margins">
           <div class="col-md-12 no-padding">
-            <hr id="makeitpop">
+            <hr class="makeitpop">
           </div>
         </div>
         <div class="row no-margins header-and-footer-background">
@@ -103,5 +121,113 @@
           </div>
         </div>
       </footer>
+    </div>
+    <!-- Modal Software Developer-->
+    <div class="modal fade" id="softwaredev" tabindex="-1" role="dialog" aria-labelledby="softwareDevLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="softwareDevLabel">Experienced Software Developer</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive image-rounded-custom" src="../images/software_development-600_medium.jpeg" alt="image of a keyboard with green led backlighting">
+<!-- TODO: Compose a summary of my experience as a software developer -->
+            <p>Need to summarize my experience as a software developer.</p>
+          </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal DevOps Engineer-->
+    <div class="modal fade" id="devops" tabindex="-1" role="dialog" aria-labelledby="devOpsLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="devOpsLabel">Experienced DevOps Engineer</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive image-rounded-custom" src="../images/dev_ops-600_medium.jpeg" alt="image of disney's wall e robot">
+<!-- TODO: Compose a summary of my experience as a DevOps Engineer -->
+            <p>Need to summarize my experience as a DevOps Engineer.</p>
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Management-->
+    <div class="modal fade" id="management" tabindex="-1" role="dialog" aria-labelledby="mgmtLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="mgmtLabel">Experienced Manager (Software & DevOps)</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive image-rounded-custom" src="../images/management-600_medium.jpg" alt="a whiteboard with several post-it notes and management terminology">
+<!-- TODO: Compose a summary of my experience as a manager -->
+            <p>Need to summarize my experience as a manager of software development teams and devops teams.</p>
+          </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project #1-->
+    <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="project1Label">Project #1</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive image-rounded-custom" src="../images/code_editor-600_medium.jpeg" alt="computer screen with html code">
+<!-- TODO: Need to showcase a Udactiy project worth featuring -->
+            <p>Coming soon!</p>
+          </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project #2-->
+    <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="project2Label">Project #2</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive image-rounded-custom" src="../images/under_construction-600_medium.jpeg" alt="computer keyboard with an under construction warning">
+<!-- TODO: Need to showcase a Udactiy project worth featuring -->
+            <p>Coming soon!</p>
+          </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Project #3-->
+    <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="project3Label">Project #3</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive image-rounded-custom" src="../images/potato_murder-600_medium.jpeg" alt="a potato looking shocked as it discovers french fries in it's path">
+<!-- TODO: Need to showcase a Udactiy project worth featuring -->
+            <p>Coming soon!</p>
+          </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
     </div>
   </body>
